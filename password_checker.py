@@ -22,7 +22,7 @@ def checkPasswordStrength(password):
 
     print(results.get(points))
 
-# Tests
-checkPasswordStrength('')
-checkPasswordStrength('')
+# Tests (not my passwords lol)
+checkPasswordStrength('Password02')
+checkPasswordStrength('!SkyFly250')
 checkPasswordStrength('12345678')
