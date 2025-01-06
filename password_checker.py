@@ -21,3 +21,8 @@ def checkPasswordStrength(password):
     points = sum(1 if met else 0 for met in criteria.values())
 
     print(results.get(points))
+    
+# Tests
+checkPasswordStrength()
+checkPasswordStrength()
+checkPasswordStrength()
