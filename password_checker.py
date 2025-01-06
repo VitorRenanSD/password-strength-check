@@ -25,4 +25,4 @@ def checkPasswordStrength(password):
 # Tests
 checkPasswordStrength('')
 checkPasswordStrength('')
-checkPasswordStrength('')
+checkPasswordStrength('12345678')
