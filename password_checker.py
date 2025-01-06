@@ -3,7 +3,7 @@ def checkPasswordStrength(password):
         print('Your password is too short!')
         password = input('Type your password: ')
 
-    # Validation criteria && possible results
+    # Validation criteria & possible results
     criteria = {
         "lower": any(char.islower() for char in password),  
         "upper": any(char.isupper() for char in password),  
@@ -21,8 +21,8 @@ def checkPasswordStrength(password):
     points = sum(1 if met else 0 for met in criteria.values())
 
     print(results.get(points))
-    
+
 # Tests
-checkPasswordStrength()
-checkPasswordStrength()
-checkPasswordStrength()
+checkPasswordStrength('')
+checkPasswordStrength('')
+checkPasswordStrength('')
