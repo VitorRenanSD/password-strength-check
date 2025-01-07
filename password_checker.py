@@ -1,4 +1,5 @@
 def checkPasswordStrength(password):
+    validPassword = False
     if len(password) < 8:
         print('Your password is too short. Use another one')
         return
@@ -19,8 +20,11 @@ def checkPasswordStrength(password):
 
     # Do the math
     points = sum(1 if met else 0 for met in criteria.values())
+    if points >= 2:
+        validPassword = True
 
     print(results.get(points))
+    return validPassword
 
 # Tests (not my passwords lol)
 checkPasswordStrength('Password02')
