@@ -14,8 +14,18 @@ def checkPasswordStrength(password):
 
     return points >= 2 # Boolean
 
-# Tests (not my passwords lol)
-checkPasswordStrength('Password02')
-checkPasswordStrength('!SkyFly250')
-checkPasswordStrength('1234567')
-checkPasswordStrength('12345678')
+
+# Tests
+passwords = [
+    'Password02',  # True
+    '!SkyFly250',  # True
+    '1234567',     # False
+    '12345678',    # False
+    'pass',        # False
+    'WeakPass!',   # True
+]
+
+for pwd in passwords:
+    print(f'Testing: {pwd}')
+    result = checkPasswordStrength(pwd)
+    print(f'Valid: {result}\n')
