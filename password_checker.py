@@ -12,7 +12,7 @@ def checkPasswordStrength(password):
 
     points = sum(criteria.values())
 
-    return points >= 2 # Boolean
+    return points >= 2 # True if met
 
 
 # Tests
