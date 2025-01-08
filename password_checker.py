@@ -20,7 +20,6 @@ def checkPasswordStrength(password):
     # Do the math
     points = sum(criteria.values())
 
-    print(results.get(points))
     return points >= 2
 
 # Tests (not my passwords lol)
