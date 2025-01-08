@@ -2,7 +2,7 @@ def checkPasswordStrength(password):
     if len(password) < 8:
         return False
 
-    # Validation criteria & possible results
+    # Validation criteria
     criteria = {
         'lower': any(char.islower() for char in password),  
         'upper': any(char.isupper() for char in password),  
@@ -10,10 +10,9 @@ def checkPasswordStrength(password):
         'special': any(not char.isalnum() for char in password),
     }
 
-    # Do the math
     points = sum(criteria.values())
 
-    return points >= 2
+    return points >= 2 # Boolean
 
 # Tests (not my passwords lol)
 checkPasswordStrength('Password02')
