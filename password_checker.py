@@ -1,4 +1,4 @@
-def checkPasswordStrength(password):
+def passwordStrengthCheck(password):
     if len(password) < 8:
         return False
 
@@ -27,5 +27,5 @@ passwords = [
 
 for pwd in passwords:
     print(f'Testing: {pwd}')
-    result = checkPasswordStrength(pwd)
+    result = passwordStrengthCheck(pwd)
     print(f'Valid: {result}\n')
