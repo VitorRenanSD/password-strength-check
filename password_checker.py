@@ -12,17 +12,18 @@ def passwordStrengthCheck(password):
 
     points = sum(criteria.values())
 
-    return points >= 2 # True if met
+    return points == 4 # True if met
 
 
 # Tests
 passwords = [
-    'Password02',  # True
+    'Password02',  # False
     '!SkyFly250',  # True
     '1234567',     # False
     '12345678',    # False
+    '@PAjkas8f@!', # True
     'pass',        # False
-    'WeakPass!',   # True
+    'WeakPass!',   # False
 ]
 
 for pwd in passwords:
