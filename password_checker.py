@@ -22,7 +22,6 @@ passwords = [
     '1234567',     # False
     '12345678',    # False
     '@PAjkas8f@!', # True
-    'pass',        # False
     'WeakPass!',   # False
 ]
 
