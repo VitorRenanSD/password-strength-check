@@ -14,18 +14,3 @@ def passwordStrengthCheck(password):
 
     return points == 4 # True if met
 
-
-# Tests
-passwords = [
-    'Password02',  # False
-    '!SkyFly250',  # True
-    '1234567',     # False
-    '12345678',    # False
-    '@PAjkas8f@!', # True
-    'WeakPass!',   # False
-]
-
-for pwd in passwords:
-    print(f'Testing: {pwd}')
-    result = passwordStrengthCheck(pwd)
-    print(f'Valid: {result}\n')
